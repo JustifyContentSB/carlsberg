@@ -1,0 +1,60 @@
+    @font-face{
+        font-family:"CarlsbergSansW00-Black";
+        src:url("Fonts/CarlsbergSansW00-Black.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW00-Black.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW00-Black.woff2") format("woff2"),url("Fonts/CarlsbergSansW00-Black.woff") format("woff"),url("Fonts/CarlsbergSansW00-Black.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW00-Bold";
+        src:url("Fonts/CarlsbergSansW00-Bold.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW00-Bold.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW00-Bold.woff2") format("woff2"),url("Fonts/CarlsbergSansW00-Bold.woff") format("woff"),url("Fonts/CarlsbergSansW00-Bold.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW05-Light";
+        src:url("Fonts/CarlsbergSansW05-Light.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW05-Light.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW05-Light.woff2") format("woff2"),url("Fonts/CarlsbergSansW05-Light.woff") format("woff"),url("Fonts/CarlsbergSansW05-Light.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW05-Bold";
+        src:url("Fonts/CarlsbergSansW05-Bold.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW05-Bold.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW05-Bold.woff2") format("woff2"),url("Fonts/CarlsbergSansW05-Bold.woff") format("woff"),url("Fonts/CarlsbergSansW05-Bold.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW05-Black";
+        src:url("Fonts/CarlsbergSansW05-Black.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW05-Black.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW05-Black.woff2") format("woff2"),url("Fonts/CarlsbergSansW05-Black.woff") format("woff"),url("Fonts/CarlsbergSansW05-Black.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW00-Light";
+        src:url("Fonts/CarlsbergSansW00-Light.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW00-Light.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW00-Light.woff2") format("woff2"),url("Fonts/CarlsbergSansW00-Light.woff") format("woff"),url("Fonts/CarlsbergSansW00-Light.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW00-LightIt";
+        src:url("Fonts/CarlsbergSansW00-LightIt.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW00-LightIt.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW00-LightIt.woff2") format("woff2"),url("Fonts/CarlsbergSansW00-LightIt.woff") format("woff"),url("Fonts/CarlsbergSansW00-LightIt.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW05-LightIt";
+        src:url("Fonts/CarlsbergSansW05-LightIt.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW05-LightIt.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW05-LightIt.woff2") format("woff2"),url("Fonts/CarlsbergSansW05-LightIt.woff") format("woff"),url("Fonts/CarlsbergSansW05-LightIt.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW00-BoldItalic";
+        src:url("Fonts/CarlsbergSansW00-BoldItalic.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW00-BoldItalic.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW00-BoldItalic.woff2") format("woff2"),url("Fonts/CarlsbergSansW00-BoldItalic.woff") format("woff"),url("Fonts/CarlsbergSansW00-BoldItalic.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW05-BoldItalic";
+        src:url("Fonts/CarlsbergSansW05-BoldItalic.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW05-BoldItalic.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW05-BoldItalic.woff2") format("woff2"),url("Fonts/CarlsbergSansW05-BoldItalic.woff") format("woff"),url("Fonts/CarlsbergSansW05-BoldItalic.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW00-BlackIt";
+        src:url("Fonts/CarlsbergSansW00-BlackIt.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW00-BlackIt.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW00-BlackIt.woff2") format("woff2"),url("Fonts/CarlsbergSansW00-BlackIt.woff") format("woff"),url("Fonts/CarlsbergSansW00-BlackIt.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"CarlsbergSansW05-BlackIt";
+        src:url("Fonts/CarlsbergSansW05-BlackIt.eot?#iefix");
+        src:url("Fonts/CarlsbergSansW05-BlackIt.eot?#iefix") format("eot"),url("Fonts/CarlsbergSansW05-BlackIt.woff2") format("woff2"),url("Fonts/CarlsbergSansW05-BlackIt.woff") format("woff"),url("Fonts/CarlsbergSansW05-BlackIt.ttf") format("truetype");
+    }

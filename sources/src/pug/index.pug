@@ -1,0 +1,355 @@
+extends base/_layout
+block head
+    title Аливария
+block page
+    section.gift
+        .gift__inner.container
+            .gift__content
+                .gift__info
+                    .gift__top
+                        h2.gift__title Залог успеха настоящего лидера — качественная подготовка к сезону, в том числе физическая.
+                        h3.gift__how Как получить самокат ?
+                    .gift__about
+                        .gift__text.gift__text--top
+                            p.
+                                Покажи свою спортивную подготовку к сезону: тренировка в зале или на рабочем месте, утренняя пробежка или трюки на сноуборде — то, что по-настоящему вдохновляет!
+                            p.
+                                для участия в конкурсе загрузи на сайт короткое видео (не более 3 минут и 300 Мб) или несколько фото.
+                            p.
+                                Если тебе нужна помощь в загрузке видео/ фото, то пиши на почту #[a(href="mailto:kunkevich_ai@alivaria.by") kunkevich_ai@alivaria.by] или в телеграм #[a(href="tel:+375295000839") +375295000839].
+                        .gift__text
+                            p.
+                                Голосование пройдёт с 9 по 12 марта. Ты можешь отдать свой голос #[b за 1 парня и за 1 девушку.]
+                            p.
+                                Все участники получат гарантированные призы, а лидеры голосования смогут весь сезон кататься на новом электросамокате»
+                .gift__scooter.scooter
+                    .scooter__main
+                        img.scooter__img.scooter__img--1(src="images/scooter/scooter-2.png", alt="самокат" width="250" data-img="1")
+                        img.scooter__img.scooter__img--2(src="images/scooter/scooter-1.png", alt="самокат" width="335" data-img="2")
+                        .scooter__img.scooter__img-bl.scooter__img--3.scooter__img--active(data-img="3")
+                            img.scooter__img-bl__image(src="images/scooter/scooter-3.png", alt="самокат" width="335")
+                            img.scooter__logo(src="images/icons/logo-white.svg", alt="логотип" width="106" height="33")
+                        img.scooter__img.scooter__img--4(src="images/scooter/scooter-4.png", alt="самокат" width="335" data-img="4")
+                    .scooter__manage
+                        a.scooter__btn(href="#"  data-img="2")
+                            img.scooter__images-img(src="images/scooter/scooter-2-small.png", alt="самокат" width="75")
+                        a.scooter__btn(href="#"  data-img="1")
+                            img.scooter__images-img(src="images/scooter/scooter-1-small.png", alt="самокат" width="75")
+                        a.scooter__btn.scooter__btn--active(href="#"  data-img="3")
+                            img.scooter__images-img(src="images/scooter/scooter-3-small.png", alt="самокат" width="75")
+                        a.scooter__btn(href="#"  data-img="4")
+                            img.scooter__images-img(src="images/scooter/scooter-4-small.png", alt="самокат" width="75")
+            .gift__bottom
+                a.btn.gift__btn(href="#") Принять участие
+
+
+    section.gallery
+        .gallery__top
+            img.gallery__top-mob(src="images/gallery/gallery-top.png", alt="картинка" width="375" height="92")
+            img.gallery__top-desk(src="images/gallery/gallery-top-desk.png", alt="картинка" width="2139" height="696")
+        .gallery__wrapper
+            .gallery__inner.container
+                .gallery__tabs
+                    a.gallery__tabs-btn.gallery__tabs-btn--active.btn(data-tab="1" href="#") Парни
+                    a.gallery__tabs-btn.btn(data-tab="2" href="#") Девушки
+                .gallery__list
+                    .gallery__list-sec.gallery__list-sec--active(data-tab="1")
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-1.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-1.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Бег за пивом
+                            .gallery__manage
+                                p.gallery__name Афанасенков Александр
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 18
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-2.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-2.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Скоростное опустошение стакана
+                            .gallery__manage
+                                p.gallery__name Иванов Михаил
+                                button.gallery__like-btn.gallery__like-btn--active
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 5
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-3.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-3.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title По пиву с другом
+                            .gallery__manage
+                                p.gallery__name Гостюнин Игорь
+                                button.gallery__like-btn.gallery__like-btn--active
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 48
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-4.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-4.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Романтик
+                            .gallery__manage
+                                p.gallery__name Прохоров Никита
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 84
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-5.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-5.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Романтик
+                            .gallery__manage
+                                p.gallery__name Артемов Никита
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 69
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-6.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-6.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Крафтовая тяга
+                            .gallery__manage
+                                p.gallery__name Бодров Вадим
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 5
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-1.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-1.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Бег за пивом
+                            .gallery__manage
+                                p.gallery__name Афанасенков Александр
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 18
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-2.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-2.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Скоростное опустошение стакана
+                            .gallery__manage
+                                p.gallery__name Иванов Михаил
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 5
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-3.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-3.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title По пиву с другом
+                            .gallery__manage
+                                p.gallery__name Гостюнин Игорь
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 48
+                                    span.gallery__like-icon
+                    .gallery__list-sec(data-tab="2")
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-4.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-1.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Бег за пивом
+                            .gallery__manage
+                                p.gallery__name Афанасенков Александр
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 18
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-5.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-2.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Скоростное опустошение стакана
+                            .gallery__manage
+                                p.gallery__name Иванов Михаил
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 5
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-6.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-3.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title По пиву с другом
+                            .gallery__manage
+                                p.gallery__name Гостюнин Игорь
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 48
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-4.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-4.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Романтик
+                            .gallery__manage
+                                p.gallery__name Прохоров Никита
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 84
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-5.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-5.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Романтик
+                            .gallery__manage
+                                p.gallery__name Артемов Никита
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 69
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-6.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-6.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Крафтовая тяга
+                            .gallery__manage
+                                p.gallery__name Бодров Вадим
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 5
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-1.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-1.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Бег за пивом
+                            .gallery__manage
+                                p.gallery__name Афанасенков Александр
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 18
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-2.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-2.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title Скоростное опустошение стакана
+                            .gallery__manage
+                                p.gallery__name Иванов Михаил
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 5
+                                    span.gallery__like-icon
+                        .gallery__item
+                            .gallery__content
+                                .gallery__img
+                                    picture
+                                        source(srcset="images/gallery/gallery-3.webp" type="image/webp")
+                                        img(src="images/gallery/gallery-3.jpg" alt="картинка" width="384" height="222")
+                                .gallery__info
+                                    p.gallery__title По пиву с другом
+                            .gallery__manage
+                                p.gallery__name Гостюнин Игорь
+                                button.gallery__like-btn
+                                    span.gallery__like-text Оценили: 
+                                    span.gallery__like-num 48
+                                    span.gallery__like-icon
+                a.btn.btn--outline.gallery__show(href="#") Показать еще
+        .gallery__bottom
+            img.gallery__bottom-mob(src="images/gallery/gallery-bottom.png", alt="картинка" width="375" height="92")
+            img.gallery__bottom-desk(src="images/gallery/gallery-bottom-desk.png", alt="картинка" width="375" height="92")
+
+    section.beer
+        .beer__top
+            img.beer__top-img(src="images/gallery/gallery-bottom-desk.png", alt="картинка" width="375" height="92")
+        .beer__inner
+            .beer__header.container
+                h2.beer__title Возьми с собой в поездку на самокате
+            .beer__slider
+                .beer__slider-container.swiper-container
+                    .swiper-wrapper
+                        .beer__slide.beer__slide--1.swiper-slide
+                            img.beer__img-mob(src="images/beer/koleso-1-mob.png", alt="самокат" width="111")
+                            img.beer__img-desk(src="images/beer/koleso-1-desk.png", alt="самокат" width="247" height="711")
+                        .beer__slide.beer__slide--2.swiper-slide
+                            img.beer__img-mob.beer__slide-beer.beer__slide-beer--1(src="images/beer/1-mob.png", alt="пиво" width="83")
+                            img.beer__img-desk.beer__slide-beer.beer__slide-beer--1(src="images/beer/1-desk.png", alt="пиво" width="83")
+                            img.beer__slide-floor(src="images/beer/pol.png", alt="самокат" width="78")
+                        .beer__slide.beer__slide--3.swiper-slide
+                            img.beer__img-mob.beer__slide-beer(src="images/beer/2-mob.png", alt="пиво" width="68")
+                            img.beer__img-desk.beer__slide-beer(src="images/beer/2-desk.png", alt="пиво" width="68")
+                            img.beer__slide-floor(src="images/beer/pol.png", alt="самокат" width="78")
+                        .beer__slide.beer__slide--4.swiper-slide
+                            img.beer__img-mob.beer__slide-beer(src="images/beer/3-mob.png", alt="пиво" width="72")
+                            img.beer__img-desk.beer__slide-beer(src="images/beer/3-desk.png", alt="пиво" width="72")
+                            img.beer__slide-floor(src="images/beer/pol.png", alt="самокат" width="78")
+                        .beer__slide.beer__slide--5.swiper-slide
+                            img.beer__img-mob.beer__slide-beer.beer__slide-beer--4(src="images/beer/4-mob.png", alt="пиво" width="77")
+                            img.beer__img-desk.beer__slide-beer.beer__slide-beer--4(src="images/beer/4-desk.png", alt="пиво" width="77")
+                            img.beer__slide-floor(src="images/beer/pol.png", alt="самокат" width="78")
+                        .beer__slide.beer__slide--6.swiper-slide
+                            img.beer__img-mob.beer__slide-beer(src="images/beer/5-mob.png", alt="пиво" width="68")
+                            img.beer__img-desk.beer__slide-beer(src="images/beer/5-desk.png", alt="пиво" width="68")
+                            img.beer__slide-floor(src="images/beer/pol.png", alt="самокат" width="78")
+                        .beer__slide.beer__slide--7.swiper-slide
+                            img.beer__img-mob.beer__slide-beer(src="images/beer/6-mob.png", alt="пиво" width="71")
+                            img.beer__img-desk.beer__slide-beer.beer__slide-beer--6(src="images/beer/6-desk.png", alt="пиво" width="71")
+                            img.beer__slide-floor(src="images/beer/pol.png", alt="самокат" width="78")
+                        .beer__slide.beer__slide--8.beer__slide--wheel.swiper-slide
+                            img.beer__img-mob.beer__slide-beer.beer__slide-beer--7(src="images/beer/7-mob.png", alt="пиво" width="48")
+                            img.beer__img-desk.beer__slide-beer.beer__slide-beer--7(src="images/beer/7-desk.png", alt="пиво" width="48")
+                            img.beer__img-mob.beer__slide-floor(src="images/beer/koleso-2-mob.png", alt="самокат" width="197")
+                            img.beer__img-desk.beer__slide-floor(src="images/beer/koleso-2-desk.png", alt="самокат" width="439")

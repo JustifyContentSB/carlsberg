@@ -1,0 +1,92 @@
+.header
+   &__inner
+      color: #fff
+   &__top
+      padding: 40px 20px 45px
+      display: flex
+      flex-direction: column
+      background: #7F7F7F
+   &__logo
+      display: inline-block
+      margin-bottom: 40px
+      align-self: flex-end
+   &__title
+      margin-bottom: 24px
+      font-family: $carlsberg900
+      font-size: 35px
+      line-height: 120%
+      text-transform: uppercase
+   &__text
+      font-family: $carlsberg700
+      font-size: 23px
+      line-height: 140%
+      text-transform: uppercase
+   &__img
+      position: relative
+      top: -2px
+      img
+         width: 100%
+         display: block
+         position: relative
+         bottom: -1px
+   &__bottom
+      display: none
+
+@media screen and (min-width: 1024px)
+   .header
+      padding-bottom: 100px
+      &__inner
+         padding-bottom: 50px
+         position: relative
+      &__top
+         width: 100%
+         max-width: 450px
+         position: absolute
+         top: 0
+         right: 0
+         z-index: 5
+         background: transparent
+         display: flex
+         flex-direction: column
+         align-items: flex-end
+      &__title
+         text-align: right
+      &__text
+         text-align: right
+      &__bottom
+         display: block
+         height: 250px
+         position: absolute
+         bottom: -120px
+
+@media screen and (min-width: 1280px)
+   .header
+      &__top
+         max-width: 570px
+      &__logo
+         img
+            width: 194px
+      &__title
+         margin-bottom: 30px
+         font-size: 65px
+      &__text
+         font-size: 28px
+
+@media screen and (min-width: 1366px)
+   .header
+      &__top
+         right: 5%
+
+@media screen and (min-width: 1800px)
+   .header
+      &__top
+         right: 16.7%
+         top: 0
+      &__logo
+         margin-bottom: 120px
+      &__title
+         margin-bottom: 42px
+      &__text
+         font-size: 32px
+      &__bottom
+         height: 280px

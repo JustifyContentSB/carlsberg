@@ -1,0 +1,115 @@
+.scooter
+   &__main
+      width: 272px
+      height: 272px
+      margin: 0 auto
+      margin-bottom: 54px
+      border-radius: 50%
+      background: #C4C4C4
+      position: relative
+   &__logo
+      position: absolute
+      top: 136px
+      right: 21px
+   &__img
+      max-width: none
+      display: none
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 5
+      &-bl
+         top: 0
+         left: 0
+         right: 0
+         bottom: 0
+         transform: translate(-10%, -20%)
+         img
+            max-width: none
+      &--active
+         display: block
+   &__manage
+      width: 100%
+      max-width: 330px
+      margin: 0 auto
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      position: relative
+      z-index: 10
+   &__btn
+      display: block
+      width: 60px
+      height: 60px
+      margin-right: calc((100% - 240px)/3)
+      border-radius: 50%
+      background: #C4C4C4
+      border: 1px solid transparent
+      &--active
+         border-color: $decor
+      &:nth-child(4n)
+         margin-right: 0
+      img
+         width: 100%
+
+@media screen and (min-width: 360px)
+   .scooter
+      &__btn
+         width: 75px
+         height: 75px
+         margin-right: calc((100% - 300px)/3)
+
+@media screen and (min-width: 1024px)
+   .scooter
+      &__main
+         width: 400px
+         height: 400px
+         margin-bottom: 30px
+      &__manage
+         max-width: 464px
+      &__btn
+         width: 80px
+         height: 80px
+         margin-right: calc((100% - 320px)/ 3)
+      &__img
+         width: 400px
+         &-bl
+            width: 500px
+            height: 500px
+            left: 50%
+            top: 50%
+            transform: translate(-40%, -50%)
+            &__image
+               width: 450px
+      &__logo
+         width: 144px
+         right: 155px
+
+@media screen and (min-width: 1280px)
+   .scooter
+      &__main
+         width: 500px
+         height: 500px
+      &__btn
+         width: 98px
+         height: 98px
+         margin-right: calc((100% - 392px)/3)
+      &__img
+         width: 515px
+         &--2
+            top: 47%
+         &-bl
+            left: 34%
+            top: 37%
+            &__image
+               width: 590px
+      &__logo
+         top: 180px
+         right: 60px
+
+@media screen and (min-width: 1366px)
+   .scooter
+      &__manage
+         position: relative
+         left: 15px
