@@ -11,7 +11,8 @@ function beerSwiper() {
   if ($(window).width() < 1024) {
     var swiper = new Swiper(".beer__slider-container", {
       slidesPerView: "auto",
-      spaceBetween: 0
+      spaceBetween: 0,
+      initialSlide: 8
     });
   }
 }

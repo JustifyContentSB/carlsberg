@@ -2027,10 +2027,12 @@ picture {
 .download {
   width: calc(100% - 40px);
   max-width: 998px;
+  max-height: 100vh;
   padding: 58px 83px 70px;
   background: #7f7f7f;
   color: #fff;
-  position: relative
+  position: relative;
+  overflow-y: auto
 }
 .download__title {
   margin-bottom: 50px;
