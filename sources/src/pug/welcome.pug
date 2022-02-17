@@ -1,0 +1,35 @@
+extends base/_layout
+block head
+   title Аливария
+block body
+   body.body-welcome
+      block header
+      block page
+         section.welcome
+            .welcome__inner
+               form.form
+                  .form__left
+                     .form__top
+                        h2.form__title Добро пожаловать
+                        p.form__enter Для входа на сайт введите свои фамилию и имя
+                        p.form__desc (как в паспорте, с большой буквы)
+                     .form__inputs
+                        label.form__inputs-label
+                           span.form__inputs-name Фамилия
+                           input(type="text")
+                        label.form__inputs-label
+                           span.form__inputs-name Имя
+                           input(type="text")
+                     label.form__agree
+                        input(type="checkbox")
+                        span.form__agree-checkbox
+                        span.form__agree-text Я ознакомлен(-а) с политикой обработки и защиты персональных данных
+                     button.btn Принять участие
+               .welcome__img
+                  img.welcome__logo(src="images/icons/logo-white.svg", alt="логотип" width="106" height="33")
+                  .welcome__man
+                     picture
+                        source(srcset="images/welcome/man.webp" type="image/webp")
+                        img(src="images/welcome/man.png" alt="картинка" width="498" height="647")
+
+   block popups

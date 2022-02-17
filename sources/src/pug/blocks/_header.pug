@@ -1,20 +1,21 @@
-header.header
-    .header__inner
-        .header__top.container
-            a.header__logo(href="#")
-                img(src="images/icons/logo.svg", alt="логотип" width="157" height="49")
-            .header__info
-                h1.visually-hidden Аливария
-                h2.header__title Подготовься #[br] к сезону!
-                p.header__text выиграй электросамокат
-        .header__img
-            picture
-                source(srcset="images/header/header-desk.webp" media="(min-width: 1366px)" type="image/webp")
-                source(srcset="images/header/header-desk.jpg" media="(min-width: 1366px)" type="image/jpeg")
-                source(srcset="images/header/header-1024.webp" media="(min-width: 1024px)" type="image/webp")
-                source(srcset="images/header/header-1024.jpg" media="(min-width: 1024px)" type="image/jpeg")
-                source(srcset="images/header/header-768.webp" media="(min-width: 600px)" type="image/webp")
-                source(srcset="images/header/header-768.jpg" media="(min-width: 600px)" type="image/jpeg")
-                source(srcset="images/header/header-mob.webp" type="image/webp")
-                img.some-class__img(src="images/header/header-mob.jpg" alt="фоновое изображение" width="376" height="410")
-        img.header__bottom(src="images/header/bottom-line.png", alt="линия" width="1920" height="531")
+block header
+    header.header
+        .header__inner
+            .header__top.container
+                a.header__logo(href="#")
+                    img(src="images/icons/logo.svg", alt="логотип" width="157" height="49")
+                .header__info
+                    h1.visually-hidden Аливария
+                    h2.header__title Подготовься #[br] к сезону!
+                    p.header__text выиграй электросамокат
+            .header__img
+                picture
+                    source(srcset="images/header/header-desk.webp" media="(min-width: 1366px)" type="image/webp")
+                    source(srcset="images/header/header-desk.jpg" media="(min-width: 1366px)" type="image/jpeg")
+                    source(srcset="images/header/header-1024.webp" media="(min-width: 1024px)" type="image/webp")
+                    source(srcset="images/header/header-1024.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                    source(srcset="images/header/header-768.webp" media="(min-width: 600px)" type="image/webp")
+                    source(srcset="images/header/header-768.jpg" media="(min-width: 600px)" type="image/jpeg")
+                    source(srcset="images/header/header-mob.webp" type="image/webp")
+                    img.some-class__img(src="images/header/header-mob.jpg" alt="фоновое изображение" width="376" height="410")
+            img.header__bottom(src="images/header/bottom-line.png", alt="линия" width="1920" height="531")

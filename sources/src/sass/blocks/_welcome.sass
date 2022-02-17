@@ -1,0 +1,41 @@
+.welcome
+   width: 998px
+   background: #7F7F7F
+   color: #fff
+   &__inner
+      display: flex
+      justify-content: space-between
+   .form
+      padding: 50px 33px 67px 83px
+   &__img
+      width: calc(100% - 500px)
+      max-width: 498px
+      position: relative
+   &__logo
+      position: absolute
+      right: 24px
+      top: 24px
+
+@media screen and (max-width: 1060px)
+   .welcome
+      &__inner
+         position: relative
+      &__img
+         width: 0
+         position: static
+      &__man
+         display: none
+      .form
+         width: 100%
+         max-width: 100%
+         padding: 50px
+         padding-top: 80px
+         &__left
+            width: 100%
+            max-width: 100%
+
+@media screen and (max-width: 767px)
+   .welcome
+      .form
+         padding: 30px
+         padding-top: 80px

@@ -403,6 +403,45 @@
           </div>
         </section>
       </main>
+      <div class="download" style="display: none"><img class="download__logo" src="images/icons/logo-white.svg" alt="логотип" width="120">
+        <div class="dowload__top">
+          <h2 class="download__title">Загрузить видео/фото</h2>
+        </div>
+        <form class="form" action="#">
+          <div class="form__inner">
+            <div class="form__left">
+              <div class="form__gender">
+                <p class="form__gender-title">Ваш пол</p>
+                <div class="form__gender-manage">
+                  <label class="form__gender-label">
+                    <input type="radio" name="gender" checked><span class="form__gender-radio"></span><span class="form__gender-text">Я парень</span>
+                  </label>
+                  <label class="form__gender-label">
+                    <input type="radio" name="gender"><span class="form__gender-radio"></span><span class="form__gender-text">Я парень</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__inputs">
+                <label class="form__inputs-label"><span class="form__inputs-name">Фамилия</span>
+                  <input type="text">
+                </label>
+                <label class="form__inputs-label"><span class="form__inputs-name">Имя</span>
+                  <input type="text">
+                </label>
+                <label class="form__inputs-label"><span class="form__inputs-name">Название видео/фото</span>
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+            <div class="form__right">
+              <label class="form__download">
+                <input type="file"><img class="form__download-icon" src="images/icons/download.svg" alt="загрузить" width="53" height="53">
+              </label>
+            </div>
+          </div>
+          <button class="btn">Принять участие</button>
+        </form>
+      </div>
     </div>
     <script src="js/main.min.js"></script>
   </body>
