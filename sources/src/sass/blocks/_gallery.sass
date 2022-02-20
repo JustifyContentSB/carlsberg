@@ -27,6 +27,19 @@
       border-radius: 75px
       background: #C4C4C4
       display: flex
+      position: relative
+      &-bg
+         width: calc(50% - 2px)
+         height: 43px
+         position: absolute
+         left: 2px
+         top: 2px
+         background: green
+         border-radius: 82px
+         background: $decor
+         transition: left .3s ease
+         &--active
+            left: 50%
       &-btn
          width: 50%
          min-height: 43px
@@ -34,13 +47,12 @@
          font-size: 18px
          line-height: 100%
          font-family: $carlsberg300
-         background: #C4C4C4
-         &--active
-            background: $decor
+         background: transparent
+         position: relative
+         z-index: 10
          &:hover,
          &:focus
-            background: $decor
-            color: #fff
+            background: transparent
    &__list
       margin-bottom: 40px
       &-sec
@@ -51,6 +63,8 @@
       margin-bottom: 20px
       &::last-child
          margin-bottom: 0
+      a
+         display: block
    &__img
       min-height: 222px
       position: relative
@@ -112,6 +126,9 @@
             height: 24px
             background: url('../images/icons/heart-red.svg') no-repeat center / contain
             opacity: 0
+   video
+      width: 100%
+      max-width: 100%
 
 @media screen and (min-width: 768px)
    .gallery
@@ -153,6 +170,8 @@
             font-family: $carlsberg700
             font-size: 20px
             line-height: 110%
+         &-bg
+            height: 66px
       &__list
          &-sec
             justify-content: flex-start
@@ -184,7 +203,7 @@
             display: block
             position: absolute
             top: 0
-            left: -200px
+            left: -130px
             right: 0
             max-width: none
             transform: rotate(-180deg)

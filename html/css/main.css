@@ -911,9 +911,7 @@ picture {
 }
 .btn:focus,
 .btn:hover {
-  background: 0 0;
-  color: #d1112e;
-  border-color: #d1112e
+  background: #ba001c
 }
 .btn--outline {
   background: 0 0;
@@ -922,7 +920,7 @@ picture {
 }
 .btn--outline:focus,
 .btn--outline:hover {
-  background: #d1112e;
+  background: #ba001c;
   color: #fff
 }
 .header__inner {
@@ -1364,7 +1362,22 @@ picture {
   background: #c4c4c4;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  position: relative
+}
+.gallery__tabs-bg {
+  width: calc(50% - 2px);
+  height: 43px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background: green;
+  border-radius: 82px;
+  background: #d1112e;
+  transition: left .3s ease
+}
+.gallery__tabs-bg--active {
+  left: 50%
 }
 .gallery__tabs-btn {
   width: 50%;
@@ -1373,15 +1386,13 @@ picture {
   font-size: 18px;
   line-height: 100%;
   font-family: CarlsbergSansW05-Light;
-  background: #c4c4c4
-}
-.gallery__tabs-btn--active {
-  background: #d1112e
+  background: 0 0;
+  position: relative;
+  z-index: 10
 }
 .gallery__tabs-btn:focus,
 .gallery__tabs-btn:hover {
-  background: #d1112e;
-  color: #fff
+  background: 0 0
 }
 .gallery__list {
   margin-bottom: 40px
@@ -1397,6 +1408,9 @@ picture {
 }
 .gallery__item::last-child {
   margin-bottom: 0
+}
+.gallery__item a {
+  display: block
 }
 .gallery__img {
   min-height: 222px;
@@ -1480,6 +1494,10 @@ picture {
   background: url(../images/icons/heart-red.svg) no-repeat center/contain;
   opacity: 0
 }
+.gallery video {
+  width: 100%;
+  max-width: 100%
+}
 @media screen and (min-width:768px) {
   .gallery__list-sec {
     -webkit-flex-wrap: wrap;
@@ -1534,6 +1552,9 @@ picture {
     font-size: 20px;
     line-height: 110%
   }
+  .gallery__tabs-bg {
+    height: 66px
+  }
   .gallery__list-sec {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -1574,7 +1595,7 @@ picture {
     display: block;
     position: absolute;
     top: 0;
-    left: -200px;
+    left: -130px;
     right: 0;
     max-width: none;
     -webkit-transform: rotate(-180deg);
@@ -1682,29 +1703,43 @@ picture {
     padding-bottom: 65px
   }
   .beer__slide--1 {
-    padding-bottom: 0
+    padding-bottom: 0;
+    margin: 0;
+    width: 170px
   }
   .beer__slide-floor {
     width: 100%
   }
   .beer__slide-beer {
-    width: 95%
+    width: 95%;
+    left: -2%
   }
   .beer__slide-beer--1 {
     top: -30px;
     left: -20px
   }
+  .beer__slide-beer--4 {
+    width: 100%;
+    left: -5%
+  }
   .beer__slide-beer--6 {
+    max-width: none;
+    width: 107%;
     position: relative;
-    top: 5px
+    top: 5px;
+    left: 0
   }
   .beer__slide-beer--7 {
-    width: 104px;
-    top: 160px
+    width: 92px;
+    top: 193px;
+    left: auto;
+    right: -1%
   }
-  .beer__slide--1 {
-    margin: 0;
-    width: 170px
+  .beer__slide--4 .beer__slide-beer {
+    left: -5%
+  }
+  .beer__slide--6 .beer__slide-beer {
+    width: 100%
   }
   .beer__slide--wheel {
     width: 300px;
@@ -1721,7 +1756,7 @@ picture {
   .beer {
     padding-top: 100px;
     position: relative;
-    z-index: 20
+    z-index: 19
   }
   .beer__top {
     display: block;
@@ -1733,7 +1768,9 @@ picture {
   }
   .beer__top-img {
     width: 120%;
-    max-width: none
+    max-width: none;
+    position: relative;
+    left: -100px
   }
   .beer__inner {
     position: relative;
@@ -1772,19 +1809,20 @@ picture {
     width: 150px
   }
   .beer__slide--4 .beer__slide-beer {
-    width: 150px
+    width: 150px;
+    left: -3%
   }
   .beer__slide--5 .beer__slide-beer {
     width: 156px;
-    left: 12px
+    left: 6px
   }
   .beer__slide--6 .beer__slide-beer {
     width: 158px;
-    left: 12px
+    left: 5px
   }
   .beer__slide--7 .beer__slide-beer {
     width: 171px;
-    left: 25px
+    left: 19px
   }
   .beer__slide-beer {
     width: 90%
@@ -1795,7 +1833,7 @@ picture {
   .beer__slide-beer--7 {
     width: 104px;
     top: 328px;
-    left: 50px
+    left: 43px
   }
 }
 .form__inner {

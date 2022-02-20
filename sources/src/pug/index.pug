@@ -44,12 +44,14 @@ block page
 
 
     section.gallery
+        h2.visually-hidden Галерея
         .gallery__top
             img.gallery__top-mob(src="images/gallery/gallery-top.png", alt="картинка" width="375" height="92")
             img.gallery__top-desk(src="images/gallery/gallery-top-desk.png", alt="картинка" width="2139" height="696")
         .gallery__wrapper
             .gallery__inner.container
                 .gallery__tabs
+                    span.gallery__tabs-bg
                     a.gallery__tabs-btn.gallery__tabs-btn--active.btn(data-tab="1" href="#") Парни
                     a.gallery__tabs-btn.btn(data-tab="2" href="#") Девушки
                 .gallery__list

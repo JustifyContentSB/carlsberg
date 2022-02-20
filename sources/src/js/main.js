@@ -36,6 +36,7 @@ function scooterTabs() {
 function galleryTabs() {
     $('.gallery__tabs-btn').click(function (e) {
         e.preventDefault();
+        $('.gallery__tabs-bg').toggleClass('gallery__tabs-bg--active');
         var id = $(this).attr('data-tab'),
             content = $('.gallery__list-sec[data-tab="' + id + '"]');
 
